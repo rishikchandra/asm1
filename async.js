@@ -37,10 +37,10 @@ function checkUserAccess(myArr){
 
 async function authenticateUser(uname,pwd){
         try{
-            var q=await verifyUser(uname,pwd);
-            var r=await getRoles(q);
-            var s=await checkUserAccess(r);
-            console.log(s);
+            var p=await verifyUser(uname,pwd);
+            var q=await getRoles(p);
+            var r=await checkUserAccess(q);
+            console.log(r);
     }
     catch(exception){
         console.log("exception :",exception);
